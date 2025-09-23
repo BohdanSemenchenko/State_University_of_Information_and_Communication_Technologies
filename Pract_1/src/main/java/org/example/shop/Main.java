@@ -8,9 +8,9 @@ public class Main {
         Category smartphones = new Category(2, "Смартфони");
         Category accessories = new Category(3, "Аксесуари");
 
-        Product product1 = new Product(1, "Ноутбук", 19999.99, "Високопродуктивний ноутбук", electronics);
-        Product product2 = new Product(2, "Смартфон", 12999.50, "Смартфон з великим екраном", smartphones);
-        Product product3 = new Product(3, "Навушники", 2499.00, "Бездротові навушники", accessories);
+        Product product1 = new Product(1, "Ноутбук", 19999.99, "Високопродуктивний ноутбук для роботи та ігор", electronics);
+        Product product2 = new Product(2, "Смартфон", 12999.50, "Смартфон з великим екраном...", smartphones);
+        Product product3 = new Product(3, "Навушники", 2499.00, "Бездротові навушники з шумозаглушенням", accessories);
 
         Cart cart = new Cart();
         Scanner scanner = new Scanner(System.in);
