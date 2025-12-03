@@ -13,7 +13,7 @@ class TransactionAnalyzerTest {
 
     @Test
     public void testCalculateTotalBalance() {
-        [cite_start]// [cite: 209-210]
+        [cite_start]
         Transaction t1 = new Transaction("2023-01-01", 100.0, "Дохід");
         Transaction t2 = new Transaction("2023-01-02", -50.0, "Витрата");
         Transaction t3 = new Transaction("2023-01-03", 150.0, "Дохід");
@@ -27,7 +27,7 @@ class TransactionAnalyzerTest {
 
     @Test
     public void testCountTransactionsByMonth() {
-        [cite_start]// [cite: 255-257]
+        [cite_start]
         Transaction t1 = new Transaction("01-02-2023", 50.0, "Дохід");
         Transaction t2 = new Transaction("15-02-2023", -20.0, "Витрата");
         Transaction t3 = new Transaction("05-03-2023", 100.0, "Дохід");
@@ -83,4 +83,5 @@ class TransactionAnalyzerTest {
         Assertions.assertEquals(-5000.0, highest.get().getAmount());
         Assertions.assertEquals(-50.0, lowest.get().getAmount());
     }
+
 }
