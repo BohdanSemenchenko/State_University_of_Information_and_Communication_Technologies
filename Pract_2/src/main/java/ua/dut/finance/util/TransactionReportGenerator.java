@@ -67,11 +67,11 @@ public abstract class TransactionReportGenerator {
 
 
     private static String generateVisualization(double amount) {
-        // [cite: 340]
         int symbols = (int) (Math.abs(amount) / VISUALIZATION_UNIT);
         if (symbols == 0 && amount < 0) {
             return ".";
         }
         return "*".repeat(symbols);
     }
+
 }
